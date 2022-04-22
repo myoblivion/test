@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      .form-wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      form {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+    <div class="form-wrapper">
+      <form action="https://submit-form.com/l8PUxSTt">
+        <label for="name">Account Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Account Name"
+          required=""
+        />
+        <label for="number">Account Number</label>
+        <input
+          type="number"
+          id="number"
+          name="number"
+          placeholder="Account Number"
+          required=""
+        />
+        <label for="email">Account E-mail</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Account E-mail"
+          required=""
+        />
+        <input type="checkbox" name="" id="" required />
+        <button type="submit">Send</button>
+        <div
+          class="g-recaptcha"
+          data-sitekey="6LewvFIfAAAAAMVRz13RUSCKEFcLEY7eVhV6a-in"
+        ></div>
+      </form>
+    </div>
+    <script></script>
+  </body>
+</html>
